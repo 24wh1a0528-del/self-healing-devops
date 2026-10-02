@@ -1,0 +1,8 @@
+# Flask web framework
+Flask==3.0.3
+
+# pytest - for running unit tests
+pytest==8.3.2
+
+# pytest-flask - makes it easier to test Flask apps
+pytest-flask==1.3.0
