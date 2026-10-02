@@ -11,8 +11,8 @@ pipeline {
 
         stage('Test') {
             steps {
-                echo 'Running application tests...'
-                bat 'cd app && python -m pytest tests/ -v'
+                echo 'Installing dependencies and running application tests...'
+                bat 'cd app && python -m pip install -r requirements.txt && python -m pytest tests/ -v'
             }
         }
 
@@ -32,4 +32,4 @@ pipeline {
             echo 'Pipeline failed. Check the stage logs.'
         }
     }
-}
+}git status
